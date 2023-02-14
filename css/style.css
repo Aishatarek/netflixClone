@@ -1,0 +1,846 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 180px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header img {
+    width: 13%;
+}
+
+header select {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 6px 10px 6px 30px;
+    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+header select:focus {
+    outline: 1px solid white;
+}
+
+
+header select option {
+    background-color: gray;
+}
+
+header .selectmenu {
+    position: relative;
+}
+
+header .selectmenu .fa-globe {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+header a {
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #e20813;
+    color: white;
+    border-radius: 5px;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/***************first section**********************/
+.Fsec {
+    min-height: 100vh;
+    background-image: url(../images/EG-en-20230206-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 8px solid #222;
+}
+
+.Fsec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+.Fsec::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.Fsec div {
+    text-align: center;
+    z-index: 2;
+}
+
+.Fsec h2 {
+    font-size: 45px;
+    margin-top: 80px;
+    color: #fff;
+    line-height: 74.5px;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+.Fsec h3 {
+    font-size: 25px;
+    margin: 12px 0px 16px;
+    color: white;
+}
+
+.Fsec p {
+    font-size: 20px;
+    margin: 16px 0px;
+    color: white;
+    font-weight: 500;
+}
+
+.Fsec form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Fsec form input[type="email"] {
+    padding: 12px 50px 12px 5px;
+    width: 40%;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.Fsec form input[type="email"]::placeholder {
+    color: #4c4c5d;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.Fsec form button {
+    padding: 10px 30px;
+    font-weight: 600;
+    border: none;
+    background-color: #e20813;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+
+/***************second section********************/
+.videoSec {
+    color: white;
+    border-bottom: 8px solid #222;
+    padding: 40px 180px;
+    text-align: left;
+}
+
+.videoSec h3 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.videoSec p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.videoSec .videoSecDiv {
+    position: relative;
+}
+
+.videoSec .videoSecDiv img {
+    width: 600px;
+}
+
+.videoSec .videoSecDiv video {
+    width: 480px;
+    position: absolute;
+    top: 70px;
+    left: 64px;
+    z-index: -1;
+}
+
+/************third section***************/
+.imgSec {
+    color: white;
+    border-bottom: 8px solid #222;
+    padding: 40px 180px;
+}
+
+.imgSec div h3 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.imgSec div p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.imgSec img {
+    width: 600px;
+
+}
+
+/*********fourth section************/
+.videoSecDiv2 {
+    position: relative;
+}
+
+.videoSec .videoSecDiv2 img {
+    width: 600px;
+}
+
+.videoSec .videoSecDiv2 video {
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    z-index: -1;
+
+}
+
+/********last section**********/
+.lastSec {
+    padding: 50px 150px;
+    border-bottom: 8px solid #222;
+}
+
+.lastSec h3 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 50px 0;
+    font-weight: 900;
+}
+
+.list {
+    width: 95%;
+    margin: auto;
+}
+
+.accordion {
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+    padding: 13px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion::after {
+    content: '\002B';
+    color: white;
+    float: right;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.active::after {
+    content: "\2212";
+}
+
+.panel {
+    background-color: #303030;
+    font-size: 20px;
+    padding: 0 20px;
+    max-height: 0;
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/**************footer****************/
+footer {
+    padding: 30px 100px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+footer ul li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+footer select {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 8px 18px;
+    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+footer select option {
+    background-color: gray;
+}
+
+footer p {
+    color: #757575;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1400px) {
+
+    /***second and fourth section******/
+    .videoSec {
+        padding: 50px 100px;
+    }
+
+    .videoSec .videoSecDiv img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 380px;
+    }
+
+    .videoSec p {
+        font-size: 28px;
+    }
+
+    /***fourth section****/
+
+    .videoSec .videoSecDiv2 img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 320px;
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        z-index: -1;
+
+    }
+
+    /****third and fifth section *****/
+    .imgSec {
+        padding: 50px 100px;
+    }
+
+    .imgSec img {
+        width: 500px;
+    }
+
+    /****last section******/
+    .lastSec {
+        padding: 50px;
+
+    }
+
+    .list {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width:992px) {
+    header img {
+        width: 20%;
+    }
+
+    /******first section**********/
+    .Fsec h2 {
+        font-size: 54px;
+    }
+
+    .Fsec h3 {
+        font-size: 25px;
+    }
+
+    .Fsec p {
+        font-size: 15px;
+    }
+
+    .Fsec form input[type="email"] {
+        padding: 18px 20px;
+        font-size: 20px;
+    }
+
+    .Fsec form input[type="submit"] {
+        padding: 18px 20px;
+        font-size: 20px;
+    }
+
+    /***second and fourth section******/
+    .videoSec {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .videoSec h3 {
+        font-size: 35px;
+    }
+
+    .videoSec p {
+        font-size: 20px;
+    }
+
+    /****third and fifth section *****/
+    .imgSec {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .imgSec img {
+        width: 400px;
+    }
+
+    .imgSec h3 {
+        font-size: 35px !important;
+    }
+
+    .imgSec p {
+        font-size: 20px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px 15px 0px;
+    }
+
+    header img {
+        width: 22%;
+    }
+
+    header select {
+        width: 50px;
+        padding: 6px 10px 6px 30px;
+        font-size: 12px;
+
+    }
+
+    .Fsec {
+        min-height: 80vh;
+    }
+
+    .Fsec div {
+        padding: 20px;
+    }
+
+    .Fsec h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .Fsec h3 {
+        font-size: 20px;
+
+    }
+
+    .Fsec p {
+        font-size: 20px;
+        margin: 20px 0px;
+        color: white;
+    }
+
+    .Fsec form {
+        flex-direction: column;
+
+    }
+
+    .Fsec form input[type="email"] {
+        padding: 10px 5px;
+        width: 85%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .Fsec form button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    /***************second section********************/
+
+    .videoSec p {
+        font-size: 19px;
+    }
+
+    .videoSec .videoSecDiv img {
+        width: 300px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 220px;
+    }
+
+    .videoSec .videoSecDiv video {
+        position: absolute;
+        top: 50px;
+        left: 54px;
+        z-index: -1;
+    }
+
+    /************third section***************/
+    .imgSec h3 {
+        font-size: 30px !important;
+    }
+
+    .imgSec .row {
+        flex-direction: column-reverse;
+    }
+
+    .imgSec img {
+        width: 300px;
+
+    }
+
+    /*********fourth section************/
+
+
+    .videoSec .videoSecDiv2 img {
+        width: 300px;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 190px;
+        top: 30px;
+        left: 60px;
+
+    }
+
+    /********last sec **************/
+    .lastSec {
+        padding: 20px;
+    }
+
+    .lastSec h3 {
+
+        font-size: 30px;
+
+    }
+
+    .accordion {
+
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+
+    .panel {
+        font-size: 18px;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:1400px) {
+
+    /***second and fourth section******/
+    .videoSec {
+        padding: 50px 100px;
+    }
+
+    .videoSec .videoSecDiv img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 380px;
+    }
+
+    .videoSec p {
+        font-size: 28px;
+    }
+
+    /***fourth section****/
+
+    .videoSec .videoSecDiv2 img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 320px;
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        z-index: -1;
+
+    }
+
+    /****third and fifth section *****/
+    .imgSec {
+        padding: 50px 100px;
+    }
+
+    .imgSec img {
+        width: 500px;
+    }
+
+    /****last section******/
+    .lastSec {
+        padding: 50px;
+
+    }
+
+    .list {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width:992px) {
+    header img {
+        width: 20%;
+    }
+
+    /******first section**********/
+    .Fsec h2 {
+        font-size: 54px;
+    }
+
+    .Fsec h3 {
+        font-size: 25px;
+    }
+
+    .Fsec p {
+        font-size: 15px;
+    }
+
+    .Fsec form input[type="email"] {
+        padding: 18px 20px;
+        font-size: 20px;
+    }
+
+    .Fsec form input[type="submit"] {
+        padding: 18px 20px;
+        font-size: 20px;
+    }
+
+    /***second and fourth section******/
+    .videoSec {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .videoSec h3 {
+        font-size: 35px;
+    }
+
+    .videoSec p {
+        font-size: 20px;
+    }
+
+    /****third and fifth section *****/
+    .imgSec {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .imgSec img {
+        width: 400px;
+    }
+
+    .imgSec h3 {
+        font-size: 35px !important;
+    }
+
+    .imgSec p {
+        font-size: 20px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px 15px 0px;
+    }
+
+    header img {
+        width: 22%;
+    }
+
+    header select {
+        width: 50px;
+        padding: 6px 10px 6px 30px;
+        font-size: 12px;
+
+    }
+
+    .Fsec {
+        min-height: 80vh;
+    }
+
+    .Fsec div {
+        padding: 20px;
+    }
+
+    .Fsec h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .Fsec h3 {
+        font-size: 20px;
+
+    }
+
+    .Fsec p {
+        font-size: 20px;
+        margin: 20px 0px;
+        color: white;
+    }
+
+    .Fsec form {
+        flex-direction: column;
+
+    }
+
+    .Fsec form input[type="email"] {
+        padding: 10px 5px;
+        width: 85%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .Fsec form button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    /***************second section********************/
+
+    .videoSec p {
+        font-size: 19px;
+    }
+
+    .videoSec .videoSecDiv img {
+        width: 300px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 220px;
+    }
+
+    .videoSec .videoSecDiv video {
+        position: absolute;
+        top: 50px;
+        left: 54px;
+        z-index: -1;
+    }
+
+    /************third section***************/
+    .imgSec h3 {
+        font-size: 30px !important;
+    }
+
+    .imgSec .row {
+        flex-direction: column-reverse;
+    }
+
+    .imgSec img {
+        width: 300px;
+
+    }
+
+    /*********fourth section************/
+
+
+    .videoSec .videoSecDiv2 img {
+        width: 300px;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 190px;
+        top: 30px;
+        left: 60px;
+
+    }
+
+    /********last sec **************/
+    .lastSec {
+        padding: 20px;
+    }
+
+    .lastSec h3 {
+
+        font-size: 30px;
+
+    }
+
+    .accordion {
+
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+
+    .panel {
+        font-size: 18px;
+
+    }
+
+}

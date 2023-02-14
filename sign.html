@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/netflix_PNG15.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/sign.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+
+
+    <section class="mainsection">
+
+        <header>
+            <a href="index.html"> <img src="images/Logonetflix.png" alt=""></a>
+        </header>
+        <div class="maindiv">
+            <form method="post" action="main.html" onkeydown="valid();" autocomplete="off">
+                <h3>Sign In</h3>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <p id="emailError"></p>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <p id="passwordError"></p>
+                <button type="submit" id="submitBtn">Sign Up</button>
+                <div class="d-flex justify-content-between signup">
+                    <div>
+                        <input type="checkbox" name="Rememberme" id="">
+                        <label>Remember me</label>
+                    </div>
+                    <a href="#">Need Help ?</a>
+                </div>
+                <div class="loginface">
+                    <a href=""> <img src="images/FB-f-Logo__blue_57.png" alt=""> Login With Facebook</a>
+                </div>
+                <div class="signupl">
+                    <p>New to Netflix?</p> <a href="index.html">Sign up now.</a>
+                </div>
+
+                <p class="learn">This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#">Learn
+                        more.</a></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="">Questions? Contact us.</a>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li>
+                            <select name="">
+                                <option value="en">English</option>
+                                <option value="ar">Arabic</option>
+
+
+                            </select>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">Privacy</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="js/sign.js"></script>
+</body>
+
+</html>

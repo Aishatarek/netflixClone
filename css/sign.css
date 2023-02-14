@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fruktur&family=Open+Sans:wght@300&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/AE-en-20210817-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-size: cover;
+}
+header{
+    padding: 25px 40px 0px;
+}
+header img{
+    width: 13%;
+}
+.mainsection{
+    background-color: rgba(0, 0, 0, 0.408);
+}
+.maindiv{
+    display: flex;
+    justify-content: center;
+}
+.mainsection form{
+    background-color: rgba(0,0,0,.75);
+    width: 450px;   
+    padding: 20px 45px 20px;
+    height: 700px;
+    margin-bottom: 100px;
+}
+.mainsection form h3{
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+}
+.mainsection form #email,.mainsection form #password{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 20px ;
+    line-height: 50px;
+    font-size: 16px;
+    color: white;
+}
+.mainsection form #email:focus,.mainsection form #password:focus{
+    background-color: #e8f0fe;
+    color: black;
+}
+.mainsection form #email::placeholder,.mainsection form #password::placeholder{
+    color: #7a8280;
+}
+.mainsection form button{
+    height: 50px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    outline: none;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.mainsection form #emailError,.mainsection form #passwordError{
+    font-size: 13px;
+    color: #e87c03;
+}
+.signup{
+    margin: 20px 0 40px;
+}
+.signup input{
+    height: 15px;
+    width: 15px;
+    background-color: #e8f0fe;
+}
+
+.signup label{
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 500;
+}
+.signup a{
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.signup a:hover{
+    color: #b3b3b3;
+
+}
+.loginface{
+    display: flex;
+    align-items: baseline;
+}
+.loginface a{
+text-decoration: none;
+color: #737373;
+font-size: 15px;
+}
+.loginface a img{
+  width: 20px;
+}
+.signupl{
+    display: flex;
+    margin: 10px 0;
+}
+.signupl p{
+    color: #737373;
+    font-size: 18px;
+    font-weight: 400;
+}
+.signupl a{
+    color:white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.signupl a:hover{
+    color:white;
+
+}
+.learn{
+    color: #737373;
+    font-size: 16px;
+}
+
+/************footer***************/
+footer{
+    padding: 50px 0;
+    background-color: rgba(0,0,0,.75);
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer a{
+    color: #757575;
+    font-size: 15px;
+}
+footer a:hover{
+    color: #757575;
+}
+footer select{
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 8px 18px;
+    font-size: 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+footer select option{
+    background-color: gray;
+}
